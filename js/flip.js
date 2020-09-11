@@ -24,3 +24,13 @@ tilesNodesClone.forEach((tile) => container.appendChild(tile));
 // game
 let selectedCard;
 let selectedIndex;
+
+const cards = document.querySelectorAll(".card-li");
+
+cards.forEach((card) => {
+  card.addEventListener("click", (e) => {
+    const flipContainer = card.children;
+    flipContainer[0].classList.add("clicked-container");
+    console.log(card.getAttribute("data-type"));
+  });
+});

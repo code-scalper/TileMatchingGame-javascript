@@ -6,7 +6,7 @@ export default class Tile {
     const tiles = this.images.map((image) => {
       const li = document.createElement("li");
       li.classList.add("card-li");
-      li.setAttribute("name", image);
+      li.setAttribute("data-type", image);
 
       const flipContainer = document.createElement("div");
       flipContainer.classList.add("flip-container");

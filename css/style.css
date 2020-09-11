@@ -55,3 +55,7 @@
 .card-li:hover .flip-container {
   transform: rotateY(180deg);
 }
+.clicked-container {
+  transform: rotateY(180deg);
+  border: 2px dotted blue;
+}
