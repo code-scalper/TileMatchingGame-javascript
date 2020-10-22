@@ -55,7 +55,31 @@
 .card-li:hover .flip-container {
   transform: rotateY(180deg);
 }
-.clicked-container {
-  transform: rotateY(180deg);
-  border: 2px solid #43609c;
+.selected-li {
+  outline: 2px solid salmon;
+}
+.selected-li .flip-container {
+  /* transform: rotateY(180deg); */
+}
+.done-li {
+  visibility: hidden;
+}
+
+.start-button {
+  border: none;
+  background: #43609c;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.timeDisplay {
+  font-size: 36px;
+  margin-top: 1rem;
+  color: #43609c;
+}
+
+.history {
+  margin-top: 2rem;
 }
